@@ -1,4 +1,7 @@
-var template = '<div class="p2pu-panel-wrap" style="display: none">' +
+
+
+(function($) {
+    var template = '<div class="p2pu-panel-wrap" style="display: none">' +
         '<div class="panel-contents clearfix">' +
         '<div class="connect">' +
         '<h4>Connect With Us</h4>' +
@@ -45,13 +48,11 @@ var template = '<div class="p2pu-panel-wrap" style="display: none">' +
         '</div>' +
         '</div>' +
         '</div>' +
-        '<div class="p2pu-color-divider-wrap">' +
-        '<div class="p2pu-color-divider">' +
-        '</div>' +
-        '</div>' +
+            '<div class="p2pu-color-divider-wrap">' +
+                '<div class="p2pu-color-divider"></div>' +
+            '</div>' +
         '</div>';
 
-(function($) {
     var Slider = function(element, options) {
         this.element =
         this.options =
@@ -86,7 +87,6 @@ var template = '<div class="p2pu-panel-wrap" style="display: none">' +
 
         // append panel in the DOM
         $(this.options.navbarContainer).prepend(this.options.template);
-
 
         var trigger = this.options.trigger;
 
