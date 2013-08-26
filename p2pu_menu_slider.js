@@ -70,7 +70,8 @@
         trigger: 'click',
         icon: '.p2pu-tab-icon',
         iconUp: 'icon-chevron-sign-down',
-        iconDown: 'icon-chevron-sign-up'
+        iconDown: 'icon-chevron-sign-up',
+        includeCSS: true
     };
 
     Slider.prototype.getDefaults = function () {
@@ -90,14 +91,17 @@
         // append panel in the DOM
         $(this.options.navbarContainer).prepend(this.options.template);
 
+        // Include CSS
+        if (this.options.includeCSS){
+            this.addCss();
+        }
+
         var trigger = this.options.trigger;
 
         if (trigger == 'click') {
             this.element.on('click', null, this.options.panel, $.proxy(this.toggle, this))
         }
-        if (css){
-            this.style()
-        }
+
     };
 
     Slider.prototype.toggle = function (e) {
