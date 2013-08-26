@@ -4,18 +4,17 @@
     var template = '<div class="p2pu-panel-wrap" style="display: none">' +
         '<div class="panel-contents container clearfix">' +
         '<div class="connect">' +
-        '<h4>Connect With Us</h4>' +
+        '<h4>About</h4>' +
         '<ul class="unstyled">' +
         '<li>' +
         '<hr>' +
-        '<a href="http://thepeople.p2pu.org">Discussions</a></li>' +
+        '<a href="http://info.p2pu.org">Blog</a></li>' +
         '<li>' +
         '<hr>' +
-        '<a href="http://www.facebook.com/P2PUniversity" target="_blank"><i' +
-        '        class="icon-facebook-sign"></i></a>' +
-        '<a href="http://twitter.com/p2pu" target="_blank"><i class="icon-twitter-sign"></i></a>' +
-        '<a href="http://info.p2pu.org/contact/" target="_blank"><i class="icon-envelope"></i></a>' +
-        '</li>' +
+        '<a href="http://reports.p2pu.org">Reports</a></li>' +
+        '<li>' +
+        '<hr>' +
+        '<a href="http://info.p2pu.org/research/">Research</a></li>' +
         '</ul>' +
         '</div>' +
         '<div class="connect">' +
@@ -33,19 +32,22 @@
         '</ul>' +
         '</div>' +
         '<div class="connect">' +
-        '<h4>About</h4>' +
+        '<h4>Connect With Us</h4>' +
         '<ul class="unstyled">' +
         '<li>' +
         '<hr>' +
-        '<a href="http://info.p2pu.org">Blog</a></li>' +
+        '<a href="http://thepeople.p2pu.org">Discussions</a></li>' +
         '<li>' +
         '<hr>' +
-        '<a href="http://reports.p2pu.org">Reports</a></li>' +
-        '<li>' +
-        '<hr>' +
-        '<a href="http://info.p2pu.org/research/">Research</a></li>' +
+        '<a href="http://www.facebook.com/P2PUniversity" target="_blank"><i' +
+        '        class="icon-facebook-sign"></i></a>' +
+        '<a href="http://twitter.com/p2pu" target="_blank"><i class="icon-twitter-sign"></i></a>' +
+        '<a href="http://info.p2pu.org/contact/" target="_blank"><i class="icon-envelope"></i></a>' +
+        '</li>' +
         '</ul>' +
         '</div>' +
+
+
         '</div>' +
         '</div>' +
             '<div class="p2pu-color-divider-wrap">' +
@@ -96,6 +98,7 @@
     };
 
     Slider.prototype.toggle = function (e) {
+        e.preventDefault();
         var panel = $(this.options.panel);
         panel.slideToggle('fast', $.proxy(this.callDelegated, this, panel));
 
