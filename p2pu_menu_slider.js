@@ -2,7 +2,7 @@
 
 (function($) {
     var template = '<div class="p2pu-panel-wrap" style="display: none">' +
-        '<div class="panel-contents clearfix">' +
+        '<div class="panel-contents container clearfix">' +
         '<div class="connect">' +
         '<h4>Connect With Us</h4>' +
         '<ul class="unstyled">' +
