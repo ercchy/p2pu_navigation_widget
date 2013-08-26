@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test widget for P2PU navigation</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-responsive-2.2.2.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-p2pu-1.0.css"/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/navigation.css"/>
+    <link rel="stylesheet" href="../css/panel.css"/>
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner p2pu-navbar">
+        <div class="container">
+
+            <a class="brand" href="#">P2PU</a>
+
+            <div class="">
+                <ul class="nav top-menu">
+                    <li>
+                        <a class="p2pu-tab" href="#">
+                            <i class="icon-chevron-sign-down p2pu-tab-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="../js/navigationbar_widget.js" type="text/javascript"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../p2pu_menu_slider.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".p2pu-tab").p2puSlider({
+            navbarContainer: '.navbar',
+            icon: '.p2pu-tab-icon',
+            iconUp: 'icon-chevron-sign-down',
+            iconDown: 'icon-chevron-sign-up'
+        });
+            /*$(".p2pu-tab").click(function () {
+                var $this = $(this),
+                    panel = $(".p2pu-panel-wrap"),
+                    icon_name = 'icon-chevron-sign-',
+                    icon = $this.find('i');
+
+                panel.slideToggle("fast", function () {
+                    var $this = $(this);
+                    if ($this.is(':visible')) {
+                        icon.attr('class', icon_name + 'up');
+                    } else {
+                        icon.attr('class', icon_name + 'down');
+                    }
+                });
+            });*/
+        });
+</script>
+</body>
+</html>

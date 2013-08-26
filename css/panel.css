@@ -1,0 +1,41 @@
+.p2pu-color-divider-wrap {
+    border-bottom: solid 6px #ff7300;
+}
+.p2pu-color-divider-wrap::before, .p2pu-color-divider-wrap::after {
+    content: "";
+    height: 6px;
+    width: 25%;
+    position: absolute;
+    left: 25%;
+    background: #b7d500;
+}
+.p2pu-color-divider-wrap::before, .p2pu-color-divider-wrap::after {
+    content: "";
+    height: 6px;
+    width: 25%;
+    position: absolute;
+    left: 25%;
+    background: #b7d500;
+}
+.p2pu-color-divider::before, .p2pu-color-divider::after {
+    content: "";
+    height: 6px;
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    background: #05c6b4;
+}
+.p2pu-color-divider::after {
+    left: 75%;
+    background: #ffbc1a;
+}
+.p2pu-panel-wrap {
+    background-color: white;
+
+}
+
+.p2pu-panel-wrap .panel-contents .connect {
+    margin-left: 20px;
+    width: 300px;
+    float: right;
+}
