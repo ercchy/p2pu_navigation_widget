@@ -95,6 +95,9 @@
         if (trigger == 'click') {
             this.element.on('click', null, this.options.panel, $.proxy(this.toggle, this))
         }
+        if (css){
+            this.style()
+        }
     };
 
     Slider.prototype.toggle = function (e) {
@@ -113,6 +116,15 @@
 
     Slider.prototype.switchIcon = function(icon, aremoveIcon, addIcon){
         icon.removeClass(aremoveIcon).addClass(addIcon);
+    };
+
+    Slider.prototype.addCss = function(){
+        var css_link = $("<link>", {
+            rel: "stylesheet",
+            type: "text/css",
+            href: "http://rawgithub.com/ercchy/p2pu_navigation_widget/master/css/panel.css"
+        });
+        css_link.appendTo('head');
     };
 
     $.fn.p2puSlider = function(options) {
