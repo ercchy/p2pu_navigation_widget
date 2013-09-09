@@ -1,9 +1,12 @@
 
-
 (function($) {
     var template = '<div class="p2pu-panel-wrap" style="display: none">' +
         '<div class="panel-contents container clearfix">' +
         '<div class="connect">' +
+        '&nbsp;'+
+        '</div>' +
+        '<div class="connect">' +
+        '<div class="connect-inner">' +
         '<h4>About</h4>' +
         '<ul class="unstyled">' +
         '<li>' +
@@ -17,7 +20,9 @@
         '<a href="http://info.p2pu.org/research/">Research</a></li>' +
         '</ul>' +
         '</div>' +
+        '</div>' +
         '<div class="connect">' +
+        '<div class="connect-inner">' +
         '<h4>Learn</h4>' +
         '<ul class="unstyled">' +
         '<li>' +
@@ -31,7 +36,9 @@
         '<a href="">Schools</a></li>' +
         '</ul>' +
         '</div>' +
+        '</div>' +
         '<div class="connect">' +
+        '<div class="connect-inner">' +
         '<h4>Connect With Us</h4>' +
         '<ul class="unstyled">' +
         '<li>' +
@@ -46,8 +53,7 @@
         '</li>' +
         '</ul>' +
         '</div>' +
-
-
+        '</div>' +
         '</div>' +
         '</div>' +
             '<div class="p2pu-color-divider-wrap">' +
