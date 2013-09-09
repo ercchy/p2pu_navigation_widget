@@ -34,9 +34,11 @@
 
 }
 .p2pu-panel-wrap .panel-contents .connect {
-    margin-right: 20px;
-    width: 290px;
+    width: 25%;
     float: left;
+}
+.p2pu-panel-wrap .panel-contents .connect-inner {
+     margin-right: 20px;
 }
 .p2pu-panel-wrap .panel-contents .connect li {
     line-height: 16px;
