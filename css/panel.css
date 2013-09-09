@@ -61,3 +61,12 @@
     color: #05c6b4;
     text-decoration: none;
 }
+
+@media (max-width: 979px){
+    .p2pu-panel-wrap .panel-contents .connect {
+        width: 100%;
+    }
+    .p2pu-panel-wrap .panel-contents .connect-inner {
+         margin-left: 30px;
+    }
+}
