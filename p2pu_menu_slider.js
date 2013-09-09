@@ -1,7 +1,6 @@
-
 (function($) {
     var template = '<div class="p2pu-panel-wrap" style="display: none">' +
-        '<div class="panel-contents container clearfix">' +
+        '<div class="panel-contents clearfix">' +
         '<div class="connect">' +
         '&nbsp;'+
         '</div>' +
