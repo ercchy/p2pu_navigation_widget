@@ -7,7 +7,7 @@
         '<div class="connect">' +
         '<div class="connect-inner">' +
         '<h4>About</h4>' +
-        '<ul class="unstyled">' +
+        '<ul class="unstyled list-unstyled">' +
         '<li>' +
         '<hr>' +
         '<a href="http://info.p2pu.org">Blog</a></li>' +
@@ -23,7 +23,7 @@
         '<div class="connect">' +
         '<div class="connect-inner">' +
         '<h4>Learn</h4>' +
-        '<ul class="unstyled">' +
+        '<ul class="unstyled list-unstyled">' +
         '<li>' +
         '<hr>' +
         '<a href="https://p2pu.org/en/groups/list/community/">Courses</a></li>' +
@@ -39,7 +39,7 @@
         '<div class="connect">' +
         '<div class="connect-inner">' +
         '<h4>Connect With Us</h4>' +
-        '<ul class="unstyled">' +
+        '<ul class="unstyled list-unstyled">' +
         '<li>' +
         '<hr>' +
         '<a href="http://thepeople.p2pu.org">Discussions</a></li>' +
