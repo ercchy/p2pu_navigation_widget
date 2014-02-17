@@ -131,7 +131,7 @@
         var css_link = $("<link>", {
             rel: "stylesheet",
             type: "text/css",
-            href: "http://rawgithub.com/ercchy/p2pu_navigation_widget/master/css/panel.css"
+            href: "//rawgithub.com/ercchy/p2pu_navigation_widget/master/css/panel.css"
         });
         css_link.appendTo('head');
     };
