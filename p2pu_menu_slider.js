@@ -42,7 +42,7 @@
         '<ul class="unstyled list-unstyled">' +
         '<li>' +
         '<hr>' +
-        '<a href="http://thepeople.p2pu.org">Discussions</a></li>' +
+        '<a href="http://community.p2pu.org">Discussions</a></li>' +
         '<li>' +
         '<hr>' +
         '<a href="http://www.facebook.com/P2PUniversity" target="_blank"><i' +
